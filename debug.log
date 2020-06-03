@@ -1,0 +1,477 @@
+Jun  3 12:40:33 [29775] DBG:core:load_module: loading module /usr/local/lib64/opensips/modules/signaling.so
+Jun  3 12:40:33 [29775] DBG:core:add_module_dependency: adding type 0 dependency signaling - (module tm)
+Jun  3 12:40:33 [29775] DBG:core:add_module_dependency: adding type 0 dependency signaling - (module sl)
+Jun  3 12:40:33 [29775] DBG:core:load_module: loading module /usr/local/lib64/opensips/modules/sl.so
+Jun  3 12:40:33 [29775] DBG:core:load_module: loading module /usr/local/lib64/opensips/modules/tm.so
+Jun  3 12:40:33 [29775] DBG:core:register_module: register_pv: tm
+Jun  3 12:40:33 [29775] DBG:core:pv_add_extra: extra items list is not initialized
+Jun  3 12:40:33 [29775] DBG:core:load_module: loading module /usr/local/lib64/opensips/modules/rr.so
+Jun  3 12:40:33 [29775] DBG:core:register_module: register_pv: rr
+Jun  3 12:40:33 [29775] DBG:core:load_module: loading module /usr/local/lib64/opensips/modules/maxfwd.so
+Jun  3 12:40:33 [29775] DBG:core:load_module: loading module /usr/local/lib64/opensips/modules/usrloc.so
+Jun  3 12:40:33 [29775] DBG:core:load_module: loading module /usr/local/lib64/opensips/modules/registrar.so
+Jun  3 12:40:33 [29775] DBG:core:add_module_dependency: adding type 2 dependency registrar - (module usrloc)
+Jun  3 12:40:33 [29775] DBG:core:add_module_dependency: adding type 2 dependency registrar - (module signaling)
+Jun  3 12:40:33 [29775] DBG:core:add_module_dependency: adding type 0 dependency registrar - (module tm)
+Jun  3 12:40:33 [29775] DBG:core:load_module: loading module /usr/local/lib64/opensips/modules/textops.so
+Jun  3 12:40:33 [29775] DBG:core:load_module: loading module /usr/local/lib64/opensips/modules/db_text.so
+Jun  3 12:40:33 [29775] DBG:core:load_module: loading module /usr/local/lib64/opensips/modules/db_cachedb.so
+Jun  3 12:40:33 [29775] DBG:core:add_module_dependency: adding type 0 dependency db_cachedb - (cachedb module (null))
+Jun  3 12:40:33 [29775] DBG:core:load_module: loading module /usr/local/lib64/opensips/modules/db_mysql.so
+Jun  3 12:40:33 [29775] DBG:core:set_mod_param_regex: usrloc matches module usrloc
+Jun  3 12:40:33 [29775] DBG:core:set_mod_param_regex: found <db_url> in module usrloc [/usr/local/lib64/opensips/modules/]
+Jun  3 12:40:33 [29775] DBG:core:set_mod_param_regex: usrloc matches module usrloc
+Jun  3 12:40:33 [29775] DBG:core:set_mod_param_regex: found <working_mode_preset> in module usrloc [/usr/local/lib64/opensips/modules/]
+Jun  3 12:40:33 [29775] DBG:core:add_modparam_dependencies: adding modparam dependencies:
+Jun  3 12:40:33 [29775] DBG:core:add_modparam_dependencies: dependency found: usrloc ---> ( sqldb module (null) )
+Jun  3 12:40:33 [29775] DBG:core:add_module_dependency: adding type 2 dependency usrloc - (sqldb module (null))
+Jun  3 12:40:33 [29775] DBG:core:set_mod_param_regex: usrloc matches module usrloc
+Jun  3 12:40:33 [29775] DBG:core:set_mod_param_regex: found <nat_bflag> in module usrloc [/usr/local/lib64/opensips/modules/]
+Jun  3 12:40:33 [29775] DBG:core:set_mod_param_regex: db_text matches module db_text
+Jun  3 12:40:33 [29775] DBG:core:set_mod_param_regex: found <db_mode> in module db_text [/usr/local/lib64/opensips/modules/]
+Jun  3 12:40:33 [29775] DBG:core:set_mod_param_regex: tm matches module tm
+Jun  3 12:40:33 [29775] DBG:core:set_mod_param_regex: found <wt_timer> in module tm [/usr/local/lib64/opensips/modules/]
+Jun  3 12:40:33 [29775] DBG:core:set_mod_param_regex: registrar matches module registrar
+Jun  3 12:40:33 [29775] DBG:core:set_mod_param_regex: found <received_avp> in module registrar [/usr/local/lib64/opensips/modules/]
+Jun  3 12:40:33 [29775] DBG:core:find_cmd_export_t: found <mf_process_maxfwd_header> in module maxfwd [/usr/local/lib64/opensips/modules/]
+Jun  3 12:40:33 [29775] DBG:core:find_cmd_export_t: found <sl_send_reply> in module sl [/usr/local/lib64/opensips/modules/]
+Jun  3 12:40:33 [29775] DBG:core:find_cmd_export_t: found <sl_send_reply> in module sl [/usr/local/lib64/opensips/modules/]
+Jun  3 12:40:33 [29775] DBG:core:find_cmd_export_t: found <loose_route> in module rr [/usr/local/lib64/opensips/modules/]
+Jun  3 12:40:33 [29775] DBG:core:find_cmd_export_t: found <t_relay> in module tm [/usr/local/lib64/opensips/modules/]
+Jun  3 12:40:33 [29775] DBG:core:find_cmd_export_t: found <sl_reply_error> in module sl [/usr/local/lib64/opensips/modules/]
+Jun  3 12:40:33 [29775] DBG:core:find_cmd_export_t: found <record_route> in module rr [/usr/local/lib64/opensips/modules/]
+Jun  3 12:40:33 [29775] DBG:core:find_cmd_export_t: found <t_relay> in module tm [/usr/local/lib64/opensips/modules/]
+Jun  3 12:40:33 [29775] DBG:core:find_cmd_export_t: found <sl_reply_error> in module sl [/usr/local/lib64/opensips/modules/]
+Jun  3 12:40:33 [29775] DBG:core:find_cmd_export_t: found <save> in module registrar [/usr/local/lib64/opensips/modules/]
+Jun  3 12:40:33 [29775] DBG:core:find_cmd_export_t: found <lookup> in module registrar [/usr/local/lib64/opensips/modules/]
+Jun  3 12:40:33 [29775] DBG:core:find_cmd_export_t: found <sl_send_reply> in module sl [/usr/local/lib64/opensips/modules/]
+Jun  3 12:40:33 [29775] DBG:core:find_cmd_export_t: found <t_relay> in module tm [/usr/local/lib64/opensips/modules/]
+Jun  3 12:40:33 [29775] DBG:core:find_cmd_export_t: found <sl_reply_error> in module sl [/usr/local/lib64/opensips/modules/]
+Jun  3 12:40:33 [29775] DBG:core:solve_module_dependencies: solving dependency usrloc -> sqldb module 
+Jun  3 12:40:33 [29775] DBG:core:solve_module_dependencies: solving dependency db_cachedb -> cachedb module 
+Jun  3 12:40:33 [29775] DBG:core:solve_module_dependencies: module db_cachedb depends on a cachedb module, but none was loaded!
+Jun  3 12:40:33 [29775] DBG:core:solve_module_dependencies: solving dependency registrar -> module tm
+Jun  3 12:40:33 [29775] DBG:core:solve_module_dependencies: solving dependency registrar -> module signaling
+Jun  3 12:40:33 [29775] DBG:core:solve_module_dependencies: solving dependency registrar -> module usrloc
+Jun  3 12:40:33 [29775] DBG:core:solve_module_dependencies: solving dependency signaling -> module sl
+Jun  3 12:40:33 [29775] DBG:core:solve_module_dependencies: solving dependency signaling -> module tm
+Jun  3 12:40:33 [29775] INFO:core:fix_poll_method: using epoll as the IO watch method (auto detected)
+Jun  3 12:40:33 [29775] DBG:core:main: Loaded 1 transport protocols
+Jun  3 12:40:33 [29775] DBG:core:socket2str: <udp:127.0.0.1:5060>
+Jun  3 12:40:33 [29775] DBG:core:create_status_pipe: created status pipe, fds=[3, 4]
+Jun  3 12:40:33 [29775] NOTICE:core:main: DEBUG MODE activated
+Jun  3 12:40:33 [29775] NOTICE:core:main: disabling daemon mode (found enabled)
+Jun  3 12:40:33 [29775] NOTICE:core:main: setting UDP children to 2 (found 4)
+Jun  3 12:40:33 [29775] DBG:core:install_sigs: override SIGSEGV handler: success
+Jun  3 12:40:33 [29775] DBG:core:set_core_dump: core dump limits set to 18446744073709551615
+Jun  3 12:40:33 [29775] NOTICE:core:main: version: opensips 3.0.2 (x86_64/linux)
+Jun  3 12:40:33 [29775] INFO:core:main: using 32 Mb of shared memory
+Jun  3 12:40:33 [29775] INFO:core:main: using 16 Mb of private process memory
+Jun  3 12:40:33 [29775] INFO:core:init_reactor_size: reactor size 1024 (using up to 0.03Mb of memory per process)
+Jun  3 12:40:33 [29775] DBG:core:ipc_register_handler: IPC type 0 [RPC] registered with handler (nil)
+Jun  3 12:40:33 [29775] DBG:core:__search_avp_map: looking for [serial_branch] avp  - found -1
+Jun  3 12:40:33 [29775] DBG:core:new_avp_alias: added alias serial_branch with id 1
+Jun  3 12:40:33 [29775] DBG:core:find_mod_export: <trace_bind_api> in module proto_hep not found
+Jun  3 12:40:33 [29775] DBG:core:trace_prot_bind: <proto_hep> has no bind api function
+Jun  3 12:40:33 [29775] DBG:core:try_load_trace_api: No tracing module used!
+Jun  3 12:40:33 [29775] INFO:core:evi_publish_event: Registered event <E_CORE_THRESHOLD(0)>
+Jun  3 12:40:33 [29775] INFO:core:evi_publish_event: Registered event <E_CORE_SHM_THRESHOLD(1)>
+Jun  3 12:40:33 [29775] INFO:core:evi_publish_event: Registered event <E_CORE_PKG_THRESHOLD(2)>
+Jun  3 12:40:33 [29775] INFO:core:evi_publish_event: Registered event <E_CORE_PROC_AUTO_SCALE(3)>
+Jun  3 12:40:33 [29775] DBG:core:init_mod: initializing module tm
+Jun  3 12:40:33 [29775] INFO:tm:mod_init: TM - initializing...
+Jun  3 12:40:33 [29775] DBG:core:get_flag_id_by_name: Flag name is null!
+Jun  3 12:40:33 [29775] DBG:tm:init_callid: Call-ID initialization: '4de18ce5284d53aa'
+Jun  3 12:40:33 [29775] DBG:tm:lock_initialize: lock initialization started
+Jun  3 12:40:33 [29775] DBG:tm:tm_init_timers: creating 0 parallel timer structures
+Jun  3 12:40:33 [29775] DBG:tm:mod_init: timer set shift is 3
+Jun  3 12:40:33 [29775] DBG:core:MD5StringArray: MD5 calculated: 533cb9e91f4b999cf76861cbb9ed54ed
+Jun  3 12:40:33 [29775] DBG:core:register_pv_context: Registered new context: request / 0x7fc28a20efd9
+Jun  3 12:40:33 [29775] DBG:core:register_pv_context: Context not found
+Jun  3 12:40:33 [29775] DBG:core:register_pv_context: Registered new context: reply / 0x7fc28a20d7aa
+Jun  3 12:40:33 [29775] DBG:core:register_pv_context: Context not found
+Jun  3 12:40:33 [29775] DBG:core:add_pv_context: Registered new context: reply
+Jun  3 12:40:33 [29775] DBG:core:__search_avp_map: looking for [uac_ctx] avp  - found -1
+Jun  3 12:40:33 [29775] DBG:core:new_avp_alias: added alias uac_ctx with id 2
+Jun  3 12:40:33 [29775] DBG:tm:tm_init_cluster: tm_replication_cluster not set - not engaging!
+Jun  3 12:40:33 [29775] DBG:core:init_mod: registering stats for tm
+Jun  3 12:40:33 [29775] DBG:core:init_mod: register MI for tm
+Jun  3 12:40:33 [29775] DBG:core:init_mod: initializing module sl
+Jun  3 12:40:33 [29775] INFO:sl:mod_init: Initializing StateLess engine
+Jun  3 12:40:33 [29775] DBG:core:init_mod: registering stats for sl
+Jun  3 12:40:33 [29775] DBG:core:init_mod: initializing module signaling
+Jun  3 12:40:33 [29775] NOTICE:signaling:mod_init: initializing module ...
+Jun  3 12:40:33 [29775] DBG:core:find_cmd_export_t: found <load_tm> in module tm [/usr/local/lib64/opensips/modules/]
+Jun  3 12:40:33 [29775] DBG:core:find_cmd_export_t: found <load_sl> in module sl [/usr/local/lib64/opensips/modules/]
+Jun  3 12:40:33 [29775] DBG:core:init_mod: initializing module rr
+Jun  3 12:40:33 [29775] INFO:rr:mod_init: rr - initializing
+Jun  3 12:40:33 [29775] DBG:core:init_mod: initializing module maxfwd
+Jun  3 12:40:33 [29775] INFO:maxfwd:mod_init: initializing...
+Jun  3 12:40:33 [29775] DBG:core:init_mod: initializing module db_text
+Jun  3 12:40:33 [29775] DBG:core:init_mod: register MI for db_text
+Jun  3 12:40:33 [29775] DBG:core:init_mod: initializing module db_cachedb
+Jun  3 12:40:33 [29775] NOTICE:db_cachedb:mod_init: initializing module db_cachedb ...
+Jun  3 12:40:33 [29775] DBG:core:init_mod: initializing module db_mysql
+Jun  3 12:40:33 [29775] DBG:db_mysql:mysql_mod_init: mysql: MySQL client version is 5.7.28
+Jun  3 12:40:33 [29775] INFO:core:evi_publish_event: Registered event <E_MYSQL_CONNECTION(4)>
+Jun  3 12:40:33 [29775] DBG:core:init_mod: initializing module usrloc
+Jun  3 12:40:33 [29775] DBG:usrloc:mod_init: initializing
+Jun  3 12:40:33 [29775] DBG:usrloc:check_runtime_config: ul config: db_mode=-1, cluster_mode=5, rrp=0, sql_wm=0
+Jun  3 12:40:33 [29775] INFO:usrloc:ul_init_locks: locks array size 512
+Jun  3 12:40:33 [29775] DBG:core:find_mod_export: found <db_bind_api> in module db_mysql [/usr/local/lib64/opensips/modules/]
+Jun  3 12:40:33 [29775] DBG:core:db_bind_mod: using db bind api for db_mysql
+Jun  3 12:40:33 [29775] DBG:core:get_flag_id_by_name: New flag: [ NAT : 0 ][1]
+Jun  3 12:40:33 [29775] INFO:core:evi_publish_event: Registered event <E_UL_AOR_INSERT(5)>
+Jun  3 12:40:33 [29775] INFO:core:evi_publish_event: Registered event <E_UL_AOR_DELETE(6)>
+Jun  3 12:40:33 [29775] INFO:core:evi_publish_event: Registered event <E_UL_CONTACT_INSERT(7)>
+Jun  3 12:40:33 [29775] INFO:core:evi_publish_event: Registered event <E_UL_CONTACT_DELETE(8)>
+Jun  3 12:40:33 [29775] INFO:core:evi_publish_event: Registered event <E_UL_CONTACT_UPDATE(9)>
+Jun  3 12:40:33 [29775] INFO:core:evi_publish_event: Registered event <E_UL_LATENCY_UPDATE(10)>
+Jun  3 12:40:33 [29775] DBG:core:init_mod: registering stats for usrloc
+Jun  3 12:40:33 [29775] DBG:core:init_mod: register MI for usrloc
+Jun  3 12:40:33 [29775] DBG:core:init_mod: initializing module registrar
+Jun  3 12:40:33 [29775] INFO:registrar:mod_init: initializing...
+Jun  3 12:40:33 [29775] DBG:core:find_cmd_export_t: found <load_sig> in module signaling [/usr/local/lib64/opensips/modules/]
+Jun  3 12:40:33 [29775] DBG:core:find_cmd_export_t: found <load_tm> in module tm [/usr/local/lib64/opensips/modules/]
+Jun  3 12:40:33 [29775] DBG:core:__search_avp_map: looking for [received] avp  - found -1
+Jun  3 12:40:33 [29775] DBG:core:new_avp_alias: added alias received with id 3
+Jun  3 12:40:33 [29775] DBG:core:find_cmd_export_t: found <ul_bind_usrloc> in module usrloc [/usr/local/lib64/opensips/modules/]
+Jun  3 12:40:33 [29775] DBG:core:get_flag_id_by_name: Flag name is null!
+Jun  3 12:40:33 [29775] DBG:core:init_mod: registering stats for registrar
+Jun  3 12:40:33 [29775] DBG:core:init_mod: initializing module textops
+Jun  3 12:40:33 [29775] INFO:textops:mod_init: initializing...
+Jun  3 12:40:33 [29775] DBG:core:init_mod: initializing module proto_udp
+Jun  3 12:40:33 [29775] INFO:core:mod_init: initializing UDP-plain protocol
+Jun  3 12:40:33 [29775] DBG:core:buf_init: initializing...
+Jun  3 12:40:33 [29775] DBG:core:find_mod_export: <trace_bind_api> in module proto_hep not found
+Jun  3 12:40:33 [29775] DBG:core:trace_prot_bind: <proto_hep> has no bind api function
+Jun  3 12:40:33 [29775] DBG:core:init_xlog: failed to load trace protocol!
+Jun  3 12:40:33 [29775] DBG:core:count_module_procs: modules require 0 extra processes
+Jun  3 12:40:33 [-1] DBG:core:init_pkg_stats: setting stats for 8 processes
+Jun  3 12:40:33 [29775] DBG:core:fix_actions: fixing mf_process_maxfwd_header, config.cfg:52
+Jun  3 12:40:33 [29775] DBG:core:fix_actions: fixing sl_send_reply, config.cfg:54
+Jun  3 12:40:33 [29775] DBG:core:fix_actions: fixing sl_send_reply, config.cfg:61
+Jun  3 12:40:33 [29775] DBG:core:fix_actions: fixing loose_route, config.cfg:66
+Jun  3 12:40:33 [29775] DBG:core:fix_actions: fixing t_relay, config.cfg:68
+Jun  3 12:40:33 [29775] DBG:core:fix_actions: fixing sl_reply_error, config.cfg:70
+Jun  3 12:40:33 [29775] DBG:core:fix_actions: fixing record_route, config.cfg:75
+Jun  3 12:40:33 [29775] DBG:core:fix_actions: fixing t_relay, config.cfg:81
+Jun  3 12:40:33 [29775] DBG:core:fix_actions: fixing sl_reply_error, config.cfg:83
+Jun  3 12:40:33 [29775] DBG:core:fix_actions: fixing save, config.cfg:94
+Jun  3 12:40:33 [29775] DBG:core:fix_actions: fixing lookup, config.cfg:100
+Jun  3 12:40:33 [29775] DBG:core:fix_actions: fixing sl_send_reply, config.cfg:102
+Jun  3 12:40:33 [29775] DBG:core:fix_actions: fixing t_relay, config.cfg:109
+Jun  3 12:40:33 [29775] DBG:core:fix_actions: fixing sl_reply_error, config.cfg:111
+Jun  3 12:40:33 [29775] DBG:core:probe_max_sock_buff: getsockopt: rcv is initially 212992
+Jun  3 12:40:33 [29775] INFO:core:probe_max_sock_buff: using rcv buffer of 416 kb
+Jun  3 12:40:33 [29775] DBG:core:internal_fork: forking new process "time_keeper" on slot 1
+Jun  3 12:40:33 [29775] DBG:core:internal_fork: forking new process "timer" on slot 2
+Jun  3 12:40:33 [29775] DBG:core:internal_fork: forking new process "UDP receiver" on slot 3
+Jun  3 12:40:33 [29776] DBG:core:run_timer_process_jif: tv = 0, 10000 , m=10, mu=10
+Jun  3 12:40:33 [29775] DBG:core:internal_fork: forking new process "UDP receiver" on slot 4
+Jun  3 12:40:33 [29777] DBG:core:run_timer_process: tv = 0, 100000 , m=10
+Jun  3 12:40:33 [29778] DBG:core:io_watch_add: [UDP_worker] io_watch_add op (5 on 27) (0x558da98c0420, 5, 1, (nil),1), fd_no=0/1024
+Jun  3 12:40:33 [29778] DBG:core:io_watch_add: [UDP_worker] io_watch_add op (16 on 27) (0x558da98c0420, 16, 4, (nil),1), fd_no=1/1024
+Jun  3 12:40:33 [29775] DBG:core:internal_fork: forking new process "UDP receiver" on slot 5
+Jun  3 12:40:33 [29778] DBG:core:io_watch_add: [UDP_worker] io_watch_add op (7 on 27) (0x558da98c0420, 7, 4, (nil),1), fd_no=2/1024
+Jun  3 12:40:33 [29778] DBG:core:io_watch_add: [UDP_worker] io_watch_add op (26 on 27) (0x558da98c0420, 26, 17, 0x7fc28c87ecf8,1), fd_no=3/1024
+Jun  3 12:40:33 [29778] DBG:core:init_mod_child: type=CHILD, rank=1, module=tm
+Jun  3 12:40:33 [29778] DBG:tm:child_init_callid: callid: '4de18ce5284d53aa-29778@127.0.0.1'
+Jun  3 12:40:33 [29778] DBG:core:init_mod_child: type=CHILD, rank=1, module=usrloc
+Jun  3 12:40:33 [29778] DBG:core:db_do_init: connection 0x7fc28c8b83b0 not found in pool
+Jun  3 12:40:33 [29779] DBG:core:io_watch_add: [UDP_worker] io_watch_add op (5 on 27) (0x558da98c0420, 5, 1, (nil),1), fd_no=0/1024
+Jun  3 12:40:33 [29779] DBG:core:io_watch_add: [UDP_worker] io_watch_add op (18 on 27) (0x558da98c0420, 18, 4, (nil),1), fd_no=1/1024
+Jun  3 12:40:33 [29775] DBG:core:internal_fork: forking new process "UDP receiver" on slot 6
+Jun  3 12:40:33 [29779] DBG:core:io_watch_add: [UDP_worker] io_watch_add op (7 on 27) (0x558da98c0420, 7, 4, (nil),1), fd_no=2/1024
+Jun  3 12:40:33 [29779] DBG:core:io_watch_add: [UDP_worker] io_watch_add op (26 on 27) (0x558da98c0420, 26, 17, 0x7fc28c87ecf8,1), fd_no=3/1024
+Jun  3 12:40:33 [29779] DBG:core:init_mod_child: type=CHILD, rank=2, module=tm
+Jun  3 12:40:33 [29779] DBG:tm:child_init_callid: callid: '4de18ce5284d53aa-29779@127.0.0.1'
+Jun  3 12:40:33 [29779] DBG:core:init_mod_child: type=CHILD, rank=2, module=usrloc
+Jun  3 12:40:33 [29779] DBG:core:db_do_init: connection 0x7fc28c8b83b0 not found in pool
+Jun  3 12:40:33 [29780] DBG:core:io_watch_add: [UDP_worker] io_watch_add op (5 on 27) (0x558da98c0420, 5, 1, (nil),1), fd_no=0/1024
+Jun  3 12:40:33 [29780] DBG:core:io_watch_add: [UDP_worker] io_watch_add op (20 on 27) (0x558da98c0420, 20, 4, (nil),1), fd_no=1/1024
+Jun  3 12:40:33 [29775] DBG:core:internal_fork: forking new process "Timer handler" on slot 7
+Jun  3 12:40:33 [29780] DBG:core:io_watch_add: [UDP_worker] io_watch_add op (7 on 27) (0x558da98c0420, 7, 4, (nil),1), fd_no=2/1024
+Jun  3 12:40:33 [29780] DBG:core:io_watch_add: [UDP_worker] io_watch_add op (26 on 27) (0x558da98c0420, 26, 17, 0x7fc28c87ecf8,1), fd_no=3/1024
+Jun  3 12:40:33 [29780] DBG:core:init_mod_child: type=CHILD, rank=3, module=tm
+Jun  3 12:40:33 [29780] DBG:tm:child_init_callid: callid: '4de18ce5284d53aa-29780@127.0.0.1'
+Jun  3 12:40:33 [29780] DBG:core:init_mod_child: type=CHILD, rank=3, module=usrloc
+Jun  3 12:40:33 [29780] DBG:core:db_do_init: connection 0x7fc28c8b83b0 not found in pool
+Jun  3 12:40:33 [29775] DBG:core:init_mod_child: type=PROC_MAIN, rank=0, module=tm
+Jun  3 12:40:33 [29775] DBG:tm:child_init_callid: callid: '4de18ce5284d53aa-29775@127.0.0.1'
+Jun  3 12:40:33 [29775] DBG:core:init_mod_child: type=PROC_MAIN, rank=0, module=usrloc
+Jun  3 12:40:33 [29775] DBG:core:db_do_init: connection 0x7fc28c8ad320 not found in pool
+Jun  3 12:40:33 [29775] DBG:db_mysql:db_mysql_connect: opening connection: mysql://xxxx:xxxx@localhost/opensips
+Jun  3 12:40:33 [29780] DBG:db_mysql:db_mysql_connect: opening connection: mysql://xxxx:xxxx@localhost/opensips
+Jun  3 12:40:33 [29779] DBG:db_mysql:db_mysql_connect: opening connection: mysql://xxxx:xxxx@localhost/opensips
+Jun  3 12:40:33 [29782] DBG:core:io_watch_add: [Timer_extra] io_watch_add op (24 on 27) (0x558da98c0420, 24, 4, (nil),1), fd_no=0/1024
+Jun  3 12:40:33 [29782] DBG:core:io_watch_add: [Timer_extra] io_watch_add op (5 on 27) (0x558da98c0420, 5, 1, (nil),1), fd_no=1/1024
+Jun  3 12:40:33 [29782] DBG:core:init_mod_child: type=CHILD, rank=5, module=tm
+Jun  3 12:40:33 [29782] DBG:tm:child_init_callid: callid: '4de18ce5284d53aa-29782@127.0.0.1'
+Jun  3 12:40:33 [29782] DBG:core:init_mod_child: type=CHILD, rank=5, module=usrloc
+Jun  3 12:40:33 [29780] DBG:db_mysql:db_mysql_connect: connection type is Localhost via UNIX socket
+Jun  3 12:40:33 [29780] DBG:db_mysql:db_mysql_connect: protocol version is 10
+Jun  3 12:40:33 [29775] DBG:db_mysql:db_mysql_connect: connection type is Localhost via UNIX socket
+Jun  3 12:40:33 [29775] DBG:db_mysql:db_mysql_connect: protocol version is 10
+Jun  3 12:40:33 [29775] DBG:db_mysql:db_mysql_connect: server version is 5.7.29-0ubuntu0.18.04.1
+Jun  3 12:40:33 [29775] DBG:core:db_do_init: connection 0x7fc28c8ad320 inserted in pool as 0x7fc28c8ad458
+Jun  3 12:40:33 [29775] DBG:core:init_mod_child: type=PROC_MAIN, rank=0, module=registrar
+Jun  3 12:40:33 [29782] DBG:core:db_do_init: connection 0x7fc28c8b83b0 not found in pool
+Jun  3 12:40:33 [29780] DBG:db_mysql:db_mysql_connect: server version is 5.7.29-0ubuntu0.18.04.1
+Jun  3 12:40:33 [29780] DBG:core:db_do_init: connection 0x7fc28c8b83b0 inserted in pool as 0x7fc28c8b8528
+Jun  3 12:40:33 [29780] DBG:core:init_mod_child: type=CHILD, rank=3, module=registrar
+Jun  3 12:40:33 [29778] DBG:db_mysql:db_mysql_connect: opening connection: mysql://xxxx:xxxx@localhost/opensips
+Jun  3 12:40:33 [29781] DBG:core:io_watch_add: [UDP_worker] io_watch_add op (5 on 27) (0x558da98c0420, 5, 1, (nil),1), fd_no=0/1024
+Jun  3 12:40:33 [29781] DBG:core:io_watch_add: [UDP_worker] io_watch_add op (22 on 27) (0x558da98c0420, 22, 4, (nil),1), fd_no=1/1024
+Jun  3 12:40:33 [29781] DBG:core:io_watch_add: [UDP_worker] io_watch_add op (7 on 27) (0x558da98c0420, 7, 4, (nil),1), fd_no=2/1024
+Jun  3 12:40:33 [29781] DBG:core:io_watch_add: [UDP_worker] io_watch_add op (26 on 27) (0x558da98c0420, 26, 17, 0x7fc28c87ecf8,1), fd_no=3/1024
+Jun  3 12:40:33 [29781] DBG:core:init_mod_child: type=CHILD, rank=4, module=tm
+Jun  3 12:40:33 [29781] DBG:tm:child_init_callid: callid: '4de18ce5284d53aa-29781@127.0.0.1'
+Jun  3 12:40:33 [29781] DBG:core:init_mod_child: type=CHILD, rank=4, module=usrloc
+Jun  3 12:40:33 [29781] DBG:core:db_do_init: connection 0x7fc28c8b83b0 not found in pool
+Jun  3 12:40:33 [29779] DBG:db_mysql:db_mysql_connect: connection type is Localhost via UNIX socket
+Jun  3 12:40:33 [29779] DBG:db_mysql:db_mysql_connect: protocol version is 10
+Jun  3 12:40:33 [29779] DBG:db_mysql:db_mysql_connect: server version is 5.7.29-0ubuntu0.18.04.1
+Jun  3 12:40:33 [29779] DBG:core:db_do_init: connection 0x7fc28c8b83b0 inserted in pool as 0x7fc28c8b8528
+Jun  3 12:40:33 [29779] DBG:core:init_mod_child: type=CHILD, rank=2, module=registrar
+Jun  3 12:40:33 [29778] DBG:db_mysql:db_mysql_connect: connection type is Localhost via UNIX socket
+Jun  3 12:40:33 [29778] DBG:db_mysql:db_mysql_connect: protocol version is 10
+Jun  3 12:40:33 [29778] DBG:db_mysql:db_mysql_connect: server version is 5.7.29-0ubuntu0.18.04.1
+Jun  3 12:40:33 [29778] DBG:core:db_do_init: connection 0x7fc28c8b83b0 inserted in pool as 0x7fc28c8b8528
+Jun  3 12:40:33 [29778] DBG:core:init_mod_child: type=CHILD, rank=1, module=registrar
+Jun  3 12:40:33 [29782] DBG:db_mysql:db_mysql_connect: opening connection: mysql://xxxx:xxxx@localhost/opensips
+Jun  3 12:40:33 [29781] DBG:db_mysql:db_mysql_connect: opening connection: mysql://xxxx:xxxx@localhost/opensips
+Jun  3 12:40:33 [29782] DBG:db_mysql:db_mysql_connect: connection type is Localhost via UNIX socket
+Jun  3 12:40:33 [29782] DBG:db_mysql:db_mysql_connect: protocol version is 10
+Jun  3 12:40:33 [29782] DBG:db_mysql:db_mysql_connect: server version is 5.7.29-0ubuntu0.18.04.1
+Jun  3 12:40:33 [29782] DBG:core:db_do_init: connection 0x7fc28c8b83b0 inserted in pool as 0x7fc28c8b8528
+Jun  3 12:40:33 [29782] DBG:core:init_mod_child: type=CHILD, rank=5, module=registrar
+Jun  3 12:40:33 [29781] DBG:db_mysql:db_mysql_connect: connection type is Localhost via UNIX socket
+Jun  3 12:40:33 [29781] DBG:db_mysql:db_mysql_connect: protocol version is 10
+Jun  3 12:40:33 [29781] DBG:db_mysql:db_mysql_connect: server version is 5.7.29-0ubuntu0.18.04.1
+Jun  3 12:40:33 [29781] DBG:core:db_do_init: connection 0x7fc28c8b83b0 inserted in pool as 0x7fc28c8b8528
+Jun  3 12:40:33 [29781] DBG:core:init_mod_child: type=CHILD, rank=4, module=registrar
+Jun  3 12:40:36 [29781] DBG:core:parse_msg: SIP Request:
+Jun  3 12:40:36 [29781] DBG:core:parse_msg:  method:  <REGISTER>
+Jun  3 12:40:36 [29781] DBG:core:parse_msg:  uri:     <sip:127.0.0.1:5061>
+Jun  3 12:40:36 [29781] DBG:core:parse_msg:  version: <SIP/2.0>
+Jun  3 12:40:36 [29781] DBG:core:parse_headers: flags=2
+Jun  3 12:40:36 [29781] DBG:core:parse_via_param: found param type 232, <branch> = <z9hG4bKYtGYeoWctl>; state=15
+Jun  3 12:40:36 [29781] DBG:core:parse_via: end of header reached, state=5
+Jun  3 12:40:36 [29781] DBG:core:parse_headers: via found, flags=2
+Jun  3 12:40:36 [29781] DBG:core:parse_headers: this is the first via
+Jun  3 12:40:36 [29781] DBG:core:receive_msg: After parse_msg...
+Jun  3 12:40:36 [29781] DBG:core:receive_msg: preparing to run routing scripts...
+Jun  3 12:40:36 [29781] DBG:core:parse_headers: flags=100
+Jun  3 12:40:36 [29781] DBG:maxfwd:is_maxfwd_present: value = 70 
+Jun  3 12:40:36 [29781] check message length 289 
+Jun  3 12:40:36 [29781] DBG:core:comp_scriptvar: int 27 : 289 / 65535
+Jun  3 12:40:36 [29781] preloaded route checking 
+ Jun  3 12:40:36 [29781] DBG:core:parse_headers: flags=200
+Jun  3 12:40:36 [29781] DBG:core:_parse_to: end of header reached, state=10
+Jun  3 12:40:36 [29781] DBG:core:_parse_to: display={}, ruri={sip:alex@127.0.0.1}
+Jun  3 12:40:36 [29781] DBG:core:get_hdr_field: <To> [21]; uri=[sip:alex@127.0.0.1] 
+Jun  3 12:40:36 [29781] DBG:core:get_hdr_field: to body [<sip:alex@127.0.0.1>
+]
+Jun  3 12:40:36 [29781] DBG:core:get_hdr_field: cseq <CSeq>: <1800> <REGISTER>
+Jun  3 12:40:36 [29781] DBG:core:get_hdr_field: content_length=0
+Jun  3 12:40:36 [29781] DBG:rr:find_first_route: No Route headers found
+Jun  3 12:40:36 [29781] DBG:rr:loose_route: There is no Route HF
+Jun  3 12:40:36 [29781]  request methods REGISTER 
+Jun  3 12:40:36 [29781] DBG:core:comp_scriptvar: str 20 : REGISTER
+Jun  3 12:40:36 [29781]  to prevent rebounce , check if uri is meant for this server 
+ Jun  3 12:40:36 [29781] DBG:core:grep_sock_info_ext: checking if host==us: 9==9 &&  [127.0.0.1] == [127.0.0.1]
+Jun  3 12:40:36 [29781] DBG:core:grep_sock_info_ext: checking if host==us: 9==9 &&  [127.0.0.1] == [127.0.0.1]
+Jun  3 12:40:36 [29781]  Request URI is this Server
+Jun  3 12:40:36 [29781] DBG:core:comp_scriptvar: str 20 : REGISTER
+Jun  3 12:40:36 [29781] DBG:core:parse_to_param: tag=vpaUrPlpZL
+Jun  3 12:40:36 [29781] DBG:core:_parse_to: end of header reached, state=29
+Jun  3 12:40:36 [29781] DBG:core:_parse_to: display={}, ruri={sip:alex@127.0.0.1}
+Jun  3 12:40:36 [29781] Saving sip:alex@127.0.0.1
+Jun  3 12:40:36 [29781] DBG:core:parse_headers: flags=ffffffffffffffff
+Jun  3 12:40:36 [29781] DBG:db_mysql:mysql_raise_event: MySQL status has not changed: connected
+Jun  3 12:40:36 [29781] DBG:core:db_new_result: allocate 48 bytes for result set at 0x7fc28c8ba308
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: 17 columns returned from the query
+Jun  3 12:40:36 [29781] DBG:core:db_allocate_columns: allocate 476 bytes for result columns at 0x7fc28c8ba368
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: RES_NAMES(0x7fc28c8ba3f0)[0]=[contact_id]
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: use DB_BIGINT result type
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: RES_NAMES(0x7fc28c8ba400)[1]=[contact]
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: use DB_STRING result type
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: RES_NAMES(0x7fc28c8ba410)[2]=[expires]
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: use DB_INT result type
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: RES_NAMES(0x7fc28c8ba420)[3]=[q]
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: use DB_DOUBLE result type
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: RES_NAMES(0x7fc28c8ba430)[4]=[callid]
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: use DB_STRING result type
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: RES_NAMES(0x7fc28c8ba440)[5]=[cseq]
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: use DB_INT result type
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: RES_NAMES(0x7fc28c8ba450)[6]=[flags]
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: use DB_INT result type
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: RES_NAMES(0x7fc28c8ba460)[7]=[cflags]
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: use DB_STRING result type
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: RES_NAMES(0x7fc28c8ba470)[8]=[user_agent]
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: use DB_STRING result type
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: RES_NAMES(0x7fc28c8ba480)[9]=[received]
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: use DB_STRING result type
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: RES_NAMES(0x7fc28c8ba490)[10]=[path]
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: use DB_STRING result type
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: RES_NAMES(0x7fc28c8ba4a0)[11]=[socket]
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: use DB_STRING result type
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: RES_NAMES(0x7fc28c8ba4b0)[12]=[methods]
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: use DB_INT result type
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: RES_NAMES(0x7fc28c8ba4c0)[13]=[last_modified]
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: use DB_DATETIME result type
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: RES_NAMES(0x7fc28c8ba4d0)[14]=[sip_instance]
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: use DB_STRING result type
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: RES_NAMES(0x7fc28c8ba4e0)[15]=[kv_store]
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: use DB_BLOB result type
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: RES_NAMES(0x7fc28c8ba4f0)[16]=[attr]
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_get_columns: use DB_STRING result type
+Jun  3 12:40:36 [29781] DBG:core:db_allocate_rows: allocate 560 bytes for result rows and values at 0x7fc28c8ba578
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_str2val: converting INT BIG[4]
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_str2val: converting STRING [sip:alex@127.0.0.1]
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_str2val: converting INT [1591173525]
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_str2val: converting DOUBLE [-1.00]
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_str2val: converting STRING [ZxtUOa6xrpweIhA@127.0.0.1]
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_str2val: converting INT [1800]
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_str2val: converting INT [0]
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_str2val: converting STRING []
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_str2val: converting STRING [n/a]
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_str2val: converting STRING [udp:127.0.0.1:5060]
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_str2val: converting DATETIME [2020-06-03 12:08:45]
+Jun  3 12:40:36 [29781] DBG:usrloc:dbrow2info: flag str: ''
+Jun  3 12:40:36 [29781] DBG:usrloc:dbrow2info: set flags: 0
+Jun  3 12:40:36 [29781] DBG:core:grep_sock_info_ext: checking if host==us: 9==9 &&  [127.0.0.1] == [127.0.0.1]
+Jun  3 12:40:36 [29781] DBG:core:grep_sock_info_ext: checking if port 5060 matches port 5060
+Jun  3 12:40:36 [29781] DBG:core:evi_param_set: adding string param
+Jun  3 12:40:36 [29781] DBG:core:evi_param_set: adding string param
+Jun  3 12:40:36 [29781] DBG:core:evi_param_set: adding string param
+Jun  3 12:40:36 [29781] DBG:core:evi_param_set: adding string param
+Jun  3 12:40:36 [29781] DBG:core:evi_param_set: adding int param
+Jun  3 12:40:36 [29781] DBG:core:evi_param_set: adding string param
+Jun  3 12:40:36 [29781] DBG:core:evi_param_set: adding int param
+Jun  3 12:40:36 [29781] DBG:core:evi_param_set: adding int param
+Jun  3 12:40:36 [29781] DBG:core:evi_param_set: adding string param
+Jun  3 12:40:36 [29781] DBG:core:evi_param_set: adding int param
+Jun  3 12:40:36 [29781] DBG:core:evi_param_set: adding string param
+Jun  3 12:40:36 [29781] DBG:core:evi_param_set: adding int param
+Jun  3 12:40:36 [29781] DBG:core:evi_param_set: adding string param
+Jun  3 12:40:36 [29781] DBG:core:destroy_avp_list: destroying list (nil)
+Jun  3 12:40:36 [29781] DBG:core:db_free_columns: freeing result columns at 0x7fc28c8ba368
+Jun  3 12:40:36 [29781] DBG:core:db_free_rows: freeing 1 rows
+Jun  3 12:40:36 [29781] DBG:core:db_free_row: freeing row values at 0x7fc28c8ba588
+Jun  3 12:40:36 [29781] DBG:core:db_free_rows: freeing rows at 0x7fc28c8ba578
+Jun  3 12:40:36 [29781] DBG:core:db_free_result: freeing result set at 0x7fc28c8ba308
+Jun  3 12:40:36 [29781] DBG:core:parse_headers: flags=8000000
+Jun  3 12:40:36 [29781] DBG:core:parse_headers: flags=ffffffffffffffff
+Jun  3 12:40:36 [29781] DBG:core:parse_headers: flags=ffffffffffffffff
+Jun  3 12:40:36 [29781] DBG:core:evi_param_set: adding string param
+Jun  3 12:40:36 [29781] DBG:core:evi_param_set: adding string param
+Jun  3 12:40:36 [29781] DBG:core:evi_param_set: adding string param
+Jun  3 12:40:36 [29781] DBG:core:evi_param_set: adding string param
+Jun  3 12:40:36 [29781] DBG:core:evi_param_set: adding int param
+Jun  3 12:40:36 [29781] DBG:core:evi_param_set: adding string param
+Jun  3 12:40:36 [29781] DBG:core:evi_param_set: adding int param
+Jun  3 12:40:36 [29781] DBG:core:evi_param_set: adding int param
+Jun  3 12:40:36 [29781] DBG:core:evi_param_set: adding string param
+Jun  3 12:40:36 [29781] DBG:core:evi_param_set: adding int param
+Jun  3 12:40:36 [29781] DBG:core:evi_param_set: adding string param
+Jun  3 12:40:36 [29781] DBG:core:evi_param_set: adding int param
+Jun  3 12:40:36 [29781] DBG:core:evi_param_set: adding string param
+Jun  3 12:40:36 [29781] DBG:core:destroy_avp_list: destroying list (nil)
+Jun  3 12:40:36 [29781] DBG:registrar:build_contact: created Contact HF: Contact: <sip:alex@127.0.0.1>;expires=7200
+
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_do_prepared_query: conn=0x7fc28c8b8310 (tail=140473558336808) MC=0x7fc28c8b85c0
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_do_prepared_query: new query=|update location set contact_id=?,expires=?,q=?,cseq=?,flags=?,cflags=?,user_agent=?,received=?,path=?,socket=?,methods=?,last_modified=?,kv_store=?,attr=?,callid=? where contact_id=?|
+Jun  3 12:40:36 [29781] DBG:db_mysql:re_init_statement:  query  is <update location set contact_id=?,expires=?,q=?,cseq=?,flags=?,cflags=?,user_agent=?,received=?,path=?,socket=?,methods=?,last_modified=?,kv_store=?,attr=?,callid=? where contact_id=?>, ptr=(nil)
+Jun  3 12:40:36 [29781] DBG:db_mysql:mysql_raise_event: MySQL status has not changed: connected
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_do_prepared_query: new statement(0x7fc28c8ba7d8) on connection: (0x7fc28c8b8310) 0x7fc28c8b8528
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_do_prepared_query: set values for the statement run
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_val2bind: added val (0): len=8; type=8; is_null=0
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_val2bind: added val (1): len=4; type=3; is_null=0
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_val2bind: added val (2): len=8; type=5; is_null=0
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_val2bind: added val (3): len=4; type=3; is_null=0
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_val2bind: added val (4): len=4; type=3; is_null=0
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_val2bind: added val (5): len=0; type=254; is_null=0
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_val2bind: added val (6): len=3; type=254; is_null=0
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_val2bind: added val (9): len=18; type=254; is_null=0
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_val2bind: added val (11): len=40; type=12; is_null=0
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_val2bind: added val (14): len=25; type=254; is_null=0
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_val2bind: added val (15): len=8; type=8; is_null=0
+Jun  3 12:40:36 [29781] DBG:db_mysql:db_mysql_do_prepared_query: doing BIND_PARAM in...
+Jun  3 12:40:36 [29781] DBG:db_mysql:mysql_raise_event: MySQL status has not changed: connected
+Jun  3 12:40:36 [29781] DBG:core:MD5StringArray: MD5 calculated: 0113fad15b7711c730699a27daeb9d52
+Jun  3 12:40:36 [29781] DBG:core:parse_headers: flags=ffffffffffffffff
+Jun  3 12:40:36 [29781] DBG:core:destroy_avp_list: destroying list (nil)
+Jun  3 12:40:36 [29781] DBG:core:receive_msg: cleaning up
+Jun  3 12:40:36 [29780] DBG:core:parse_msg: SIP Reply  (status):
+Jun  3 12:40:36 [29780] DBG:core:parse_msg:  version: <SIP/2.0>
+Jun  3 12:40:36 [29780] DBG:core:parse_msg:  status:  <200>
+Jun  3 12:40:36 [29780] DBG:core:parse_msg:  reason:  <OK>
+Jun  3 12:40:36 [29780] DBG:core:parse_headers: flags=2
+Jun  3 12:40:36 [29780] DBG:core:parse_via_param: found param type 232, <branch> = <z9hG4bKYtGYeoWctl>; state=16
+Jun  3 12:40:36 [29780] DBG:core:parse_via: end of header reached, state=5
+Jun  3 12:40:36 [29780] DBG:core:parse_headers: via found, flags=2
+Jun  3 12:40:36 [29780] DBG:core:parse_headers: this is the first via
+Jun  3 12:40:36 [29780] DBG:core:receive_msg: After parse_msg...
+Jun  3 12:40:36 [29780] DBG:core:forward_reply: found module tm, passing reply to it
+Jun  3 12:40:36 [29780] DBG:tm:t_check: start=0xffffffffffffffff
+Jun  3 12:40:36 [29780] DBG:core:parse_headers: flags=22
+Jun  3 12:40:36 [29780] DBG:core:parse_to_param: tag=28de.0113fad15b7711c730699a27daeb9d52
+Jun  3 12:40:36 [29780] DBG:core:_parse_to: end of header reached, state=29
+Jun  3 12:40:36 [29780] DBG:core:_parse_to: display={}, ruri={sip:alex@127.0.0.1}
+Jun  3 12:40:36 [29780] DBG:core:get_hdr_field: <To> [63]; uri=[sip:alex@127.0.0.1] 
+Jun  3 12:40:36 [29780] DBG:core:get_hdr_field: to body [<sip:alex@127.0.0.1>]
+Jun  3 12:40:36 [29780] DBG:core:get_hdr_field: cseq <CSeq>: <1800> <REGISTER>
+Jun  3 12:40:36 [29780] DBG:tm:t_reply_matching: failure to match a transaction
+Jun  3 12:40:36 [29780] DBG:tm:t_check: end=(nil)
+Jun  3 12:40:36 [29780] DBG:core:destroy_avp_list: destroying list (nil)
+Jun  3 12:40:36 [29780] DBG:core:receive_msg: cleaning up
+Jun  3 12:40:45 [29775] DBG:core:handle_sigs: SIGINT received, program terminates
+Jun  3 12:40:45 [29775] DBG:core:shutdown_opensips: Asking process 3 [SIP receiver udp:127.0.0.1:5060] to terminate
+Jun  3 12:40:45 [29775] DBG:core:shutdown_opensips: Asking process 4 [SIP receiver udp:127.0.0.1:5060] to terminate
+Jun  3 12:40:45 [29775] DBG:core:shutdown_opensips: Asking process 5 [SIP receiver udp:127.0.0.1:5060] to terminate
+Jun  3 12:40:45 [29775] DBG:core:shutdown_opensips: Asking process 6 [SIP receiver udp:127.0.0.1:5060] to terminate
+Jun  3 12:40:45 [29775] DBG:core:shutdown_opensips: Asking process 7 [Timer handler] to terminate
+Jun  3 12:40:45 [29781] DBG:core:ipc_handle_job: received job type 0[RPC] from process 0
+Jun  3 12:40:45 [29781] DBG:core:rpc_process_terminate: Process 6 exiting with code 0...
+Jun  3 12:40:45 [29782] DBG:core:ipc_handle_job: received job type 0[RPC] from process 0
+Jun  3 12:40:45 [29782] DBG:core:rpc_process_terminate: Process 7 exiting with code 0...
+Jun  3 12:40:45 [29777] INFO:core:sig_usr: signal 15 received
+Jun  3 12:40:45 [29778] DBG:core:ipc_handle_job: received job type 0[RPC] from process 0
+Jun  3 12:40:45 [29778] DBG:core:rpc_process_terminate: Process 3 exiting with code 0...
+Jun  3 12:40:45 [29775] INFO:core:shutdown_opensips: process 2(29777) [timer] terminated, still waiting for 6 more
+Jun  3 12:40:45 [29776] INFO:core:sig_usr: signal 15 received
+Jun  3 12:40:45 [29775] INFO:core:shutdown_opensips: process 6(29781) [SIP receiver udp:127.0.0.1:5060] terminated, still waiting for 5 more
+Jun  3 12:40:45 [29775] INFO:core:shutdown_opensips: process 7(29782) [Timer handler] terminated, still waiting for 4 more
+Jun  3 12:40:45 [29775] INFO:core:shutdown_opensips: process 3(29778) [SIP receiver udp:127.0.0.1:5060] terminated, still waiting for 3 more
+Jun  3 12:40:45 [29779] DBG:core:ipc_handle_job: received job type 0[RPC] from process 0
+Jun  3 12:40:45 [29779] DBG:core:rpc_process_terminate: Process 4 exiting with code 0...
+Jun  3 12:40:45 [29780] DBG:core:ipc_handle_job: received job type 0[RPC] from process 0
+Jun  3 12:40:45 [29780] DBG:core:rpc_process_terminate: Process 5 exiting with code 0...
+Jun  3 12:40:45 [29775] INFO:core:shutdown_opensips: process 1(29776) [time_keeper] terminated, still waiting for 2 more
+Jun  3 12:40:45 [29775] INFO:core:shutdown_opensips: process 5(29780) [SIP receiver udp:127.0.0.1:5060] terminated, still waiting for 1 more
+Jun  3 12:40:45 [29775] INFO:core:shutdown_opensips: process 4(29779) [SIP receiver udp:127.0.0.1:5060] terminated, still waiting for 0 more
+Jun  3 12:40:45 [29775] INFO:core:cleanup: cleanup
+Jun  3 12:40:45 [29775] NOTICE:db_cachedb:destroy: destroy module db_cachedb ...
+Jun  3 12:40:45 [29775] DBG:db_text:destroy: destroy ...
+Jun  3 12:40:45 [29775] DBG:db_mysql:db_mysql_do_prepared_query: conn=0x7fc28c8ad280 (tail=140473558291544) MC=0x7fc28c8ad4f0
+Jun  3 12:40:45 [29775] DBG:db_mysql:db_mysql_do_prepared_query: new query=|delete from location where expires<? AND expires!=?|
+Jun  3 12:40:45 [29775] DBG:db_mysql:re_init_statement:  query  is <delete from location where expires<? AND expires!=?>, ptr=(nil)
+Jun  3 12:40:45 [29775] DBG:db_mysql:mysql_raise_event: MySQL status has not changed: connected
+Jun  3 12:40:45 [29775] DBG:db_mysql:db_mysql_do_prepared_query: new statement(0x7fc28c8adb08) on connection: (0x7fc28c8ad280) 0x7fc28c8ad458
+Jun  3 12:40:45 [29775] DBG:db_mysql:db_mysql_do_prepared_query: set values for the statement run
+Jun  3 12:40:45 [29775] DBG:db_mysql:db_mysql_val2bind: added val (0): len=4; type=3; is_null=0
+Jun  3 12:40:45 [29775] DBG:db_mysql:db_mysql_val2bind: added val (1): len=4; type=3; is_null=0
+Jun  3 12:40:45 [29775] DBG:db_mysql:db_mysql_do_prepared_query: doing BIND_PARAM in...
+Jun  3 12:40:45 [29775] DBG:db_mysql:mysql_raise_event: MySQL status has not changed: connected
+Jun  3 12:40:45 [29775] DBG:core:pool_remove: removing connection from the pool
+Jun  3 12:40:45 [29775] DBG:tm:tm_shutdown: tm_shutdown : start
+Jun  3 12:40:45 [29775] DBG:tm:unlink_timer_lists: emptying DELETE list for set 0
+Jun  3 12:40:45 [29775] DBG:tm:tm_shutdown: emptying hash table
+Jun  3 12:40:45 [29775] DBG:tm:tm_shutdown: releasing timers
+Jun  3 12:40:45 [29775] DBG:tm:tm_shutdown: removing semaphores
+Jun  3 12:40:45 [29775] DBG:tm:tm_shutdown: destroying callback lists
+Jun  3 12:40:45 [29775] DBG:tm:tm_shutdown: tm_shutdown : done
+Jun  3 12:40:45 [29775] DBG:core:shm_mem_destroy: destroying the shared memory lock
+Thank you for running opensips

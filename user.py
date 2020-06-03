@@ -57,7 +57,7 @@ To: <sip:%s@127.0.0.1>
 From: <sip:%s@127.0.0.1>;tag=%s
 Call-ID: %s@127.0.0.1
 CSeq: 1800 REGISTER
-Expires: 720029172917
+Expires: 7200
 Contact: <sip:%s@127.0.0.1>
 Content-Length: 0
 '''
@@ -96,7 +96,6 @@ def generateAck(to,branch_id,call_id,from_tag,cseq_id):
 message=generateRegister()
 print(message)
 sendPacket(message)
-time.sleep(2)
 recievePacket()
 time.sleep(2)
 
