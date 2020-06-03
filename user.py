@@ -57,7 +57,8 @@ To: <sip:%s@127.0.0.1>
 From: <sip:%s@127.0.0.1>;tag=%s
 Call-ID: %s@127.0.0.1
 CSeq: 1800 REGISTER
-Expires: 7200
+Expires: 720029172917
+Contact: <sip:%s@127.0.0.1>
 Content-Length: 0
 '''
 Bye = '''BYE sip:%s@p127.0.0.1 SIP/2.0
@@ -82,7 +83,7 @@ RandomChoice = string.ascii_letters+string.digits
 def generateRand(d=10):
 	return ''.join([random.choice(RandomChoice) for n in range(d)])
 def generateRegister():
-	return Reg % (generateRand(),user_id,user_id,generateRand(),generateRand(15))
+	return Reg % (generateRand(),user_id,user_id,generateRand(),generateRand(15),user_id)
 def generateInvite(msg,to):
 	return Inv % (to,generateRand(),to,user_id,generateRand(),generateRand(15),msg)
 def generateBye(to,branch_id,call_id,to_tag,from_tag):
@@ -96,8 +97,8 @@ message=generateRegister()
 print(message)
 sendPacket(message)
 time.sleep(2)
-# recievePacket()
-# time.sleep(2)
+recievePacket()
+time.sleep(2)
 
 # Messaging
   # Method 1:
@@ -117,7 +118,7 @@ time.sleep(2)
 starter = input("Do you want to join or start? ")
 if starter == 'start':
 	other_user_id = input("Other Caller-id: ")
-	message=generateInvite('lol','alex')
+	message=generateInvite('lol',other_user_id)
 	print(message)
 	sendPacket(message)
 	time.sleep(10)
