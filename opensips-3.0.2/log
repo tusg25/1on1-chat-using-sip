@@ -1,0 +1,561 @@
+Jan 21 15:55:10 [1898901] WARNING:core:warn: warning in config file /home/razvan/work/opensips-scripts//tls_mgm.cfg, line 7, column 10-11: 'children' option is deprecated, use 'udp_workers' instead
+Jan 21 15:55:10 [1898901] WARNING:core:warn: warning in config file /home/razvan/work/opensips-scripts//tls_mgm.cfg, line 8, column 10-11: 'children' option is deprecated, use 'udp_workers' instead
+Jan 21 15:55:10 [1898901] INFO:tls_mgm:mod_load: openssl version: OpenSSL 1.1.1d  10 Sep 2019
+Jan 21 15:55:10 [1898901] INFO:core:fix_poll_method: using epoll as the IO watch method (auto detected)
+Jan 21 15:55:10 [1898903] NOTICE:core:main: version: opensips 3.0.1 (x86_64/linux)
+Jan 21 15:55:10 [1898903] INFO:core:main: using 512 Mb of shared memory
+Jan 21 15:55:10 [1898903] INFO:core:main: using 128 Mb of private process memory
+Jan 21 15:55:10 [1898903] INFO:core:init_reactor_size: reactor size 1024 (using up to 0.03Mb of memory per process)
+Jan 21 15:55:10 [1898903] INFO:core:evi_publish_event: Registered event <E_CORE_THRESHOLD(0)>
+Jan 21 15:55:10 [1898903] INFO:core:evi_publish_event: Registered event <E_CORE_SHM_THRESHOLD(1)>
+Jan 21 15:55:10 [1898903] INFO:core:evi_publish_event: Registered event <E_CORE_PKG_THRESHOLD(2)>
+Jan 21 15:55:10 [1898903] INFO:core:evi_publish_event: Registered event <E_CORE_PROC_AUTO_SCALE(3)>
+Jan 21 15:55:10 [1898903] INFO:core:mod_init: initializing UDP-plain protocol
+Jan 21 15:55:10 [1898903] INFO:tls_mgm:mod_init: initializing TLS management
+Jan 21 15:55:10 [1898903] INFO:tls_mgm:mod_init: disabling compression due ZLIB problems
+Jan 21 15:55:10 [1898903] INFO:tls_mgm:init_tls_dom: Processing TLS domain 'default'
+Jan 21 15:55:10 [1898903] NOTICE:tls_mgm:init_tls_dom: No EC curve defined
+Jan 21 15:55:10 [1898903] INFO:tls_mgm:get_ssl_ctx_verify_mode: client verification NOT activated. Weaker security.
+Jan 21 15:55:10 [1898903] NOTICE:tls_mgm:init_tls_dom: no CA dir for tls 'default' defined, using default '/etc/pki/CA/'
+Jan 21 15:55:10 [1898903] NOTICE:tls_mgm:init_tls_dom: no crl for tls, using none
+Jan 21 15:55:10 [1898903] INFO:tls_mgm:init_tls_dom: Processing TLS domain 'dom'
+Jan 21 15:55:10 [1898903] NOTICE:tls_mgm:init_tls_dom: No EC curve defined
+Jan 21 15:55:10 [1898903] INFO:tls_mgm:get_ssl_ctx_verify_mode: server verification NOT activated. Weaker security.
+Jan 21 15:55:10 [1898903] NOTICE:tls_mgm:init_tls_dom: no CA dir for tls 'dom' defined, using default '/etc/pki/CA/'
+Jan 21 15:55:10 [1898903] NOTICE:tls_mgm:init_tls_dom: no crl for tls, using none
+Jan 21 15:55:10 [1898903] INFO:core:evi_publish_event: Registered event <E_MYSQL_CONNECTION(4)>
+Jan 21 15:55:10 [1898903] INFO:proto_tls:mod_init: initializing TLS protocol
+Jan 21 15:55:10 [1898903] INFO:core:probe_max_sock_buff: using rcv buffer of 416 kb
+Jan 21 15:55:10 [1898903] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:10 [1898903] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 73
+Jan 21 15:55:10 [1898901] INFO:core:daemonize: pre-daemon process exiting with 0
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 70
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 71
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 90
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 91
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 92
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 93
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 94
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 95
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 96
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 97
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 98
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 99
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 100
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 101
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 102
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 103
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 104
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 105
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 106
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 107
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 108
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 109
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 110
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 111
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 112
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 113
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 114
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 115
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 116
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 117
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 118
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 119
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 120
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 121
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 122
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 123
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 124
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 125
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 126
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 127
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 128
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 129
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 130
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 131
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 132
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 133
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 134
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 135
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 136
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 137
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 138
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 139
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 140
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 141
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 142
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 143
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 144
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 145
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 146
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 147
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 148
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 149
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 150
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 151
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 152
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 153
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 154
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 155
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 156
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 157
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 158
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 159
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 160
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 161
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 162
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 163
+Jan 21 15:55:34 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:34 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 164
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41106 accepted
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41058 accepted
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41090 accepted
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41110 accepted
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41100 accepted
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41062 accepted
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41052 accepted
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41094 accepted
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41084 accepted
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41114 accepted
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41064 accepted
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41068 accepted
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41096 accepted
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41074 accepted
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41102 accepted
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41108 accepted
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41054 accepted
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41092 accepted
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41086 accepted
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41170 accepted
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41078 accepted
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41070 accepted
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41080 accepted
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41200 accepted
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41076 accepted
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41066 accepted
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41140 accepted
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41210 accepted
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41220 accepted
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41214 accepted
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41176 accepted
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41060 accepted
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41118 accepted
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41174 accepted
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41154 accepted
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41056 accepted
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41122 accepted
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41182 accepted
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41196 accepted
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41184 accepted
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41156 accepted
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41234 accepted
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41242 accepted
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41164 accepted
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41116 accepted
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41172 accepted
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41124 accepted
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41166 accepted
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41208 accepted
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41218 accepted
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41134 accepted
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41098 accepted
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41142 accepted
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41228 accepted
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41136 accepted
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41236 accepted
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898914] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41188 accepted
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898909] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41180 accepted
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41082 accepted
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41120 accepted
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41238 accepted
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898915] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41158 accepted
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41240 accepted
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41244 accepted
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898910] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41128 accepted
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41216 accepted
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41186 accepted
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41168 accepted
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41138 accepted
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898916] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41104 accepted
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41088 accepted
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41250 accepted
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898913] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41248 accepted
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898912] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41072 accepted
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41246 accepted
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41226 accepted
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41198 accepted
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:34 [1898911] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:35 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:35 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 70
+Jan 21 15:55:35 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:35 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 71
+Jan 21 15:55:35 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:35 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 90
+Jan 21 15:55:35 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:35 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 91
+Jan 21 15:55:35 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:35 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 92
+Jan 21 15:55:35 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:35 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 93
+Jan 21 15:55:35 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:35 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 94
+Jan 21 15:55:35 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:35 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 95
+Jan 21 15:55:35 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:35 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 96
+Jan 21 15:55:35 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:35 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 97
+Jan 21 15:55:35 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:35 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 98
+Jan 21 15:55:35 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:35 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 99
+Jan 21 15:55:35 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:35 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 100
+Jan 21 15:55:35 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:35 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 101
+Jan 21 15:55:35 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:35 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 102
+Jan 21 15:55:35 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:35 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 103
+Jan 21 15:55:35 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:35 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 104
+Jan 21 15:55:35 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:35 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 105
+Jan 21 15:55:35 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:35 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 106
+Jan 21 15:55:35 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:35 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 107
+Jan 21 15:55:35 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:35 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 108
+Jan 21 15:55:35 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:35 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 109
+Jan 21 15:55:35 [1898918] INFO:core:probe_max_sock_buff: using snd buffer of 416 kb
+Jan 21 15:55:35 [1898918] INFO:core:init_sock_keepalive: TCP keepalive enabled on socket 110
+Jan 21 15:55:35 [1898909] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41232 accepted
+Jan 21 15:55:35 [1898909] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:35 [1898909] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:35 [1898911] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41224 accepted
+Jan 21 15:55:35 [1898911] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:35 [1898911] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:35 [1898910] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41230 accepted
+Jan 21 15:55:35 [1898910] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:35 [1898910] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:35 [1898912] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41222 accepted
+Jan 21 15:55:35 [1898912] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:35 [1898912] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:35 [1898913] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41212 accepted
+Jan 21 15:55:35 [1898913] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:35 [1898913] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:35 [1898914] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41206 accepted
+Jan 21 15:55:35 [1898914] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:35 [1898914] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:35 [1898915] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41204 accepted
+Jan 21 15:55:35 [1898915] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:35 [1898915] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:35 [1898916] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41202 accepted
+Jan 21 15:55:35 [1898916] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:35 [1898916] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:35 [1898909] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41194 accepted
+Jan 21 15:55:35 [1898909] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:35 [1898909] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:35 [1898910] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41192 accepted
+Jan 21 15:55:35 [1898910] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:35 [1898910] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:35 [1898911] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41190 accepted
+Jan 21 15:55:35 [1898911] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:35 [1898911] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:35 [1898912] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41178 accepted
+Jan 21 15:55:35 [1898912] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:35 [1898912] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:35 [1898913] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41162 accepted
+Jan 21 15:55:35 [1898913] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:35 [1898913] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:35 [1898914] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41160 accepted
+Jan 21 15:55:35 [1898914] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:35 [1898914] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:35 [1898916] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41150 accepted
+Jan 21 15:55:35 [1898916] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:35 [1898916] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:35 [1898915] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41152 accepted
+Jan 21 15:55:35 [1898915] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:35 [1898915] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:35 [1898909] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41148 accepted
+Jan 21 15:55:35 [1898909] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:35 [1898909] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:35 [1898910] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41146 accepted
+Jan 21 15:55:35 [1898910] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:35 [1898910] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:35 [1898911] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41144 accepted
+Jan 21 15:55:35 [1898911] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:35 [1898911] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:35 [1898913] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41130 accepted
+Jan 21 15:55:35 [1898913] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:35 [1898913] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:35 [1898912] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41132 accepted
+Jan 21 15:55:35 [1898912] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:35 [1898912] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:35 [1898914] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41126 accepted
+Jan 21 15:55:35 [1898914] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:35 [1898914] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 15:55:35 [1898915] INFO:proto_tls:tls_accept: New TLS connection from 127.0.0.1:41112 accepted
+Jan 21 15:55:35 [1898915] INFO:proto_tls:tls_accept: Client did not present a TLS certificate
+Jan 21 15:55:35 [1898915] INFO:proto_tls:tls_dump_cert_info: tls_accept: local TLS server certificate subject: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org, issuer: /CN=OpenSIPS/ST=opensips.org/C=IP/emailAddress=team@opensips.org/O=opensips.org
+Jan 21 16:24:00 [1898904] INFO:core:sig_usr: signal 15 received
+Jan 21 16:24:00 [1898905] INFO:core:sig_usr: signal 15 received
+Jan 21 16:24:00 [1898909] INFO:core:sig_usr: signal 15 received
+Jan 21 16:24:00 [1898907] INFO:core:sig_usr: signal 15 received
+Jan 21 16:24:00 [1898908] INFO:core:sig_usr: signal 15 received
+Jan 21 16:24:00 [1898913] INFO:core:sig_usr: signal 15 received
+Jan 21 16:24:00 [1898912] INFO:core:sig_usr: signal 15 received
+Jan 21 16:24:00 [1898911] INFO:core:sig_usr: signal 15 received
+Jan 21 16:24:00 [1898906] INFO:core:sig_usr: signal 15 received
+Jan 21 16:24:00 [1898918] INFO:core:sig_usr: signal 15 received
+Jan 21 16:24:00 [1898910] INFO:core:sig_usr: signal 15 received
+Jan 21 16:24:00 [1898915] INFO:core:sig_usr: signal 15 received
+Jan 21 16:24:00 [1898917] INFO:core:sig_usr: signal 15 received
+Jan 21 16:24:00 [1898903] INFO:core:shutdown_opensips: process 1(1898904) [MI FIFO] terminated, still waiting for 14 more
+Jan 21 16:24:00 [1898903] INFO:core:shutdown_opensips: process 2(1898905) [HTTPD INADDR_ANY:8888] terminated, still waiting for 13 more
+Jan 21 16:24:00 [1898903] INFO:core:shutdown_opensips: process 3(1898906) [time_keeper] terminated, still waiting for 12 more
+Jan 21 16:24:00 [1898903] INFO:core:shutdown_opensips: process 4(1898907) [timer] terminated, still waiting for 11 more
+Jan 21 16:24:00 [1898903] INFO:core:shutdown_opensips: process 5(1898908) [SIP receiver udp:127.0.0.1:5060] terminated, still waiting for 10 more
+Jan 21 16:24:00 [1898903] INFO:core:shutdown_opensips: process 6(1898909) [TCP receiver] terminated, still waiting for 9 more
+Jan 21 16:24:00 [1898903] INFO:core:shutdown_opensips: process 7(1898910) [TCP receiver] terminated, still waiting for 8 more
+Jan 21 16:24:00 [1898903] INFO:core:shutdown_opensips: process 8(1898911) [TCP receiver] terminated, still waiting for 7 more
+Jan 21 16:24:00 [1898903] INFO:core:shutdown_opensips: process 9(1898912) [TCP receiver] terminated, still waiting for 6 more
+Jan 21 16:24:00 [1898903] INFO:core:shutdown_opensips: process 10(1898913) [TCP receiver] terminated, still waiting for 5 more
+Jan 21 16:24:00 [1898903] INFO:core:shutdown_opensips: process 11(1898914) [TCP receiver] terminated, still waiting for 4 more
+Jan 21 16:24:00 [1898903] INFO:core:shutdown_opensips: process 12(1898915) [TCP receiver] terminated, still waiting for 3 more
+Jan 21 16:24:00 [1898903] INFO:core:shutdown_opensips: process 13(1898916) [TCP receiver] terminated, still waiting for 2 more
+Jan 21 16:24:00 [1898903] INFO:core:shutdown_opensips: process 15(1898918) [TCP main] terminated, still waiting for 1 more
+Jan 21 16:24:00 [1898903] INFO:core:shutdown_opensips: process 14(1898917) [Timer handler] terminated, still waiting for 0 more
+Jan 21 16:24:00 [1898903] INFO:core:cleanup: cleanup
+Thank you for running opensips

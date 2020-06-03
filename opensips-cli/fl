@@ -1,0 +1,3 @@
+import xmlrpclib
+opensips = xmlrpclib.ServerProxy('http://127.0.0.1:5060/RPC2')
+print opensips.ps();

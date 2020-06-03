@@ -1,0 +1,21 @@
+opensips (3.0.2-1) stable; urgency=low
+
+  * Minor Public Release.
+
+ -- Razvan Crainea <razvan@opensips.org>  Tue, 28 Jan 2020 17:30:29 +0200
+
+
+opensips (3.0.1-1) stable; urgency=low
+
+  * Minor Public Release.
+
+ -- Razvan Crainea <razvan@opensips.org>  Tue, 01 Oct 2019 18:16:45 +0300
+
+
+opensips (3.0.0-1) unstable; urgency=medium
+
+  * Local package
+
+ -- Razvan Crainea <razvan@opensips.org>  Tue, 16 Apr 2019 21:15:04 +0300
+
+
