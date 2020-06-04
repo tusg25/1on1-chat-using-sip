@@ -50,16 +50,17 @@ CSeq: 1 INVITE
 
 %s
 '''
-Reg = '''REGISTER sip:127.0.0.1:5061 SIP/2.0
-Via: SIP/2.0/UDP 127.0.0.1;branch=z9hG4bK%s
+Reg = '''REGISTER sip:127.0.0.1 SIP/2.0
+Via: SIP/2.0/UDP 127.0.0.1:5060;branch=z9hG4bK1.2.3
 Max-Forwards: 70
 To: <sip:%s@127.0.0.1>
 From: <sip:%s@127.0.0.1>;tag=%s
 Call-ID: %s@127.0.0.1
-CSeq: 1800 REGISTER
-Expires: 7200
+CSeq: 1826 REGISTER
 Contact: <sip:%s@127.0.0.1>
+Expires: 7200
 Content-Length: 0
+
 '''
 Bye = '''BYE sip:%s@p127.0.0.1 SIP/2.0
 Via: SIP/2.0/UDP 127.0.0.1;branch=z9hG4bK%s
@@ -83,7 +84,7 @@ RandomChoice = string.ascii_letters+string.digits
 def generateRand(d=10):
 	return ''.join([random.choice(RandomChoice) for n in range(d)])
 def generateRegister():
-	return Reg % (generateRand(),user_id,user_id,generateRand(),generateRand(15),user_id)
+	return Reg % (user_id,user_id,generateRand(),generateRand(15),user_id)
 def generateInvite(msg,to):
 	return Inv % (to,generateRand(),to,user_id,generateRand(),generateRand(15),msg)
 def generateBye(to,branch_id,call_id,to_tag,from_tag):
