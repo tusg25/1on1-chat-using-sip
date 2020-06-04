@@ -6,7 +6,8 @@ from threading import Thread
 Local_IP = '127.0.0.1'
 Registrar_PORT = 5060
 Session_PORT = 5060
-My_PORT = 60000 + random.randrange(5500)
+user_id = input("Caller-id: ")
+My_PORT = 60000 + int(input('Port pass between 1 to 5000? '))
 proto = socket.getprotobyname('udp')
 user_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 try:
@@ -17,7 +18,6 @@ except socket.error as e:
 	user_socket.close()
 	exit()
 BUFSIZ = 1024
-user_id = input("Caller-id: ")
 print("User_port %s" % My_PORT)
 
 # Socket functions
@@ -31,13 +31,14 @@ def sendPacket(msg):
 def recievePacket():
 	try:
 		msg = user_socket.recv(BUFSIZ).decode("utf8")
-		print(msg)
+		# print(msg)
 		if msg == "quit":  ### TO be modified to BYE message
 			user_socket.close()
 			exit()
 		return msg
 	except socket.error as e:  # Possibly OpenSips server died.
 		print(e)
+		exit()
 
 ### SIP Messages 
 Inv = '''INVITE sip:%s@127.0.0.1 SIP/2.0
@@ -47,11 +48,11 @@ To: <sip:%s@127.0.0.1>
 From: <sip:%s@127.0.0.1>;tag=%s
 Call-ID: %s@127.0.0.1
 CSeq: 1 INVITE
+Content-Length: 0
 
-%s
 '''
 Reg = '''REGISTER sip:127.0.0.1 SIP/2.0
-Via: SIP/2.0/UDP 127.0.0.1:5060;branch=z9hG4bK1.2.3
+Via: SIP/2.0/UDP 127.0.0.1;branch=z9hG4bK%s
 Max-Forwards: 70
 To: <sip:%s@127.0.0.1>
 From: <sip:%s@127.0.0.1>;tag=%s
@@ -62,7 +63,7 @@ Expires: 7200
 Content-Length: 0
 
 '''
-Bye = '''BYE sip:%s@p127.0.0.1 SIP/2.0
+Bye = '''BYE sip:%s@127.0.0.1 SIP/2.0
 Via: SIP/2.0/UDP 127.0.0.1;branch=z9hG4bK%s
 Max-Forwards: 70
 From: <sip:%s@127.0.0.1>;tag=%s
@@ -71,34 +72,62 @@ Call-ID: %s@127.0.0.1
 CSeq: 230 BYE
 Content-Length: 0
 '''
-Ack = '''ACK sip:%s@p127.0.0.1 SIP/2.0
-Via: SIP/2.0/UDP 127.0.0.1;branch=z9hG4bK%s
+Ack = '''ACK sip:%s@127.0.0.1 SIP/2.0
+%s
 Max-Forwards: 70
-From: <sip:%s@127.0.0.1>;tag=%s
-To: <sip:%s@127.0.0.1>;tag=%s
-Call-ID: %s@127.0.0.1
-CSeq: %s ACK
+To: <sip:%s@127.0.0.1>;tag=%s\r
+%s
+%s
+%sACK
 Content-Length: 0
+
 '''
 RandomChoice = string.ascii_letters+string.digits
 def generateRand(d=10):
 	return ''.join([random.choice(RandomChoice) for n in range(d)])
 def generateRegister():
-	return Reg % (user_id,user_id,generateRand(),generateRand(15),user_id)
-def generateInvite(msg,to):
-	return Inv % (to,generateRand(),to,user_id,generateRand(),generateRand(15),msg)
+	return Reg % (generateRand(),user_id,user_id,generateRand(),generateRand(15),user_id)
+def generateInvite(to):
+	return Inv % (to,generateRand(),to,user_id,generateRand(),generateRand(15))
 def generateBye(to,branch_id,call_id,to_tag,from_tag):
 	return Bye % (to,branch_id,user_id,from_tag,to,to_tag,call_id)
-def generateAck(to,branch_id,call_id,from_tag,cseq_id):
-	return Ack % (to,branch_id,user_id,from_tag,to,generateRand(),call_id,cseq_id)
+def generateAck(msg):
+	ls = msg.split('\n')
+	def get(s):
+		for r in ls:
+			if r.split()[0] == s:
+				# print(s + " in "+ r)
+				return r
+		print("%s not in msg" % s)
+	via = get('Via:')
+	frm  = get('From:')
+	callid = get('Call-ID:')
+	cseq = get('CSeq:')
+	return Ack % (user_id,via,user_id,generateRand(),frm,callid,cseq[:-6])
+def handleRegACK(msg):
+	status = msg.split('\n')[0].split()[1]
+	if status != '200':
+		print("Registration failed")
+		exit(1)
+	else:
+		print("Registration Successful")
+def handleInvite(msg):
+	ls = msg.split('\n')
+	for r in ls:
+		if 'rport' in r:
+			port = r.split('=')[1].split(';')[0]
+			# print(port)
+			return port
+	print("rport not found")
+	exit(1)
+
 # Registration Process
 # 1) REGISTER User-id -> Registrar
 # 2) 200 OK Registrar -> User-id
 message=generateRegister()
-print(message)
+# print(message)
 sendPacket(message)
-recievePacket()
-time.sleep(2)
+handleRegACK(recievePacket())
 
 # Messaging
   # Method 1:
@@ -116,42 +145,68 @@ time.sleep(2)
   	# 3) Other user send normal ACK
   	# 4) Normal messaging
 starter = input("Do you want to join or start? ")
+oport = 60000
+print(starter)
 if starter == 'start':
 	other_user_id = input("Other Caller-id: ")
-	message=generateInvite('lol',other_user_id)
-	print(message)
+	message=generateInvite(other_user_id)
+	# print(message)
 	sendPacket(message)
-	time.sleep(10)
-	recievePacket()
+	while True:
+		message = recievePacket()
+		if message.split('\n')[0].split()[0] == 'INVITE':
+			break
+	oport = handleInvite(message)
 	# Depending on recievePacket data start normal connection
 else:
-	recievePacket()
-	# message=generateAck() # Param from recieved INVITE
-	print(message)
+	while True:
+		message = recievePacket()
+		if message.split('\n')[0].split()[0] == 'INVITE':
+			break
+	oport = handleInvite(message)
+	#msg=generateAck(message) # Param from recieved INVITE
+	#print(msg)
+	#sendPacket(msg)
+	other_user_id = message.split('\n')[6].split(':',2)[2].split('@')[0]
+	# print(other_user_id)
+	message=generateInvite(other_user_id)
+	# print(message)
 	sendPacket(message)
-
 ### For Normal Messaging
-# user_socket = socket(AF_INET, SOCK_DGRAM)
-# def receive(): 
-# 	"""Handles receiving of messages."""
-# 	while True:
-# 		try:
-# 			msg = user_socket.recv(BUFSIZ).decode("utf8")
-# 			print(msg)
-# 			if msg == "quit":
-# 				user_socket.close()
-# 				exit()
-# 		except OSError as e:  # Possibly other server died.
-# 			print(e)
-# 			break
-# def send():
-# 	"""Handles sending of messages."""
-# 	msg = input(">>> ")
-# 	user_socket.sendall(bytes(user_name+': '+msg,"utf8"))
-# 	if msg == "quit":
-# 		user_socket.close()
-# 		exit()
-# thread_send = threading.Thread(target = send)
-# thread_send.start()
-# thread_receive = threading.Thread(target = receive)
-# thread_receive.start()
+user_socket.close()
+soc = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+try:
+	soc.bind((Local_IP,My_PORT))
+	soc.connect((Local_IP,int(oport)))
+except socket.error as e:
+	print(e)
+	soc.close()
+	exit(1)
+def receive(): 
+	"""Handles receiving of messages."""
+	while True:
+		try:
+			msg = soc.recv(BUFSIZ).decode("utf8")
+			print(msg,end="\n>>> ")
+			if msg == "quit":
+				soc.close()
+				exit()
+		except OSError as e:  # Possibly other server died.
+			print(e)
+			break
+def send():
+	"""Handles sending of messages."""
+	while True:
+		try:
+			msg = input(">>> ")
+			soc.sendall(bytes(user_id+': '+msg,"utf8"))
+			if msg == "quit":
+				soc.close()
+				exit()
+		except OSError as e:
+			print(e)
+			break
+thread_send = Thread(target = send)
+thread_send.start()
+thread_receive = Thread(target = receive)
+thread_receive.start()
