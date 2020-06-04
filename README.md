@@ -3,7 +3,7 @@
 This project for creating a **one to one chat system** which simulates messaging using Rich Communication Services (**RCS**) standards defined by the GSMA. **Python socket library** is used to create a message generating platform and **OpenSips** is used to handle **SIP** (Session Initiation Protocol) messages during creation and management of a session.
 
 ## Installation Instruction
-
+### Dependencies
 ```
 # Required OS packages
 sudo apt-get install -y git make bison flex mysql-server mysql-client libmysqlclient-dev libncurses5 libncurses5-dev
@@ -59,22 +59,6 @@ python3 user.py
 
 ## Simulation and Description
 Registration
-```mermaid
-sequenceDiagram
-Alex ->> SIP Server: Register
-SIP Server -->> Alex: ACK OK
-Note right of Alex: Alex joining server.
-Bob ->> SIP Server: Register
-SIP Server -->> Bob: ACK OK
-Note right of SIP Server: Bob joining server.
-```
+![](img/reg.png)
 Messaging
-```mermaid
-sequenceDiagram
-Alex ->> SIP Server: Invite Bob 
-SIP Server -->> Bob: Invite Bob
-Bob ->> SIP Server: ACK OK
-SIP Server -->> Alex: ACK OK
-Alex ->> Bob: ACK
-Note right of Alex: Alex making direct <br/> message with Bob.
-```
+![](img/inv.png)
