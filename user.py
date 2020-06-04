@@ -188,7 +188,7 @@ def receive():
 		try:
 			msg = soc.recv(BUFSIZ).decode("utf8")
 			print(msg,end="\n>>> ")
-			if msg == "quit":
+			if msg.endswith("quit"):
 				soc.close()
 				exit()
 		except OSError as e:  # Possibly other server died.
